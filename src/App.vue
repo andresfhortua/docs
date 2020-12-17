@@ -18,16 +18,10 @@ export default {
   components: {listarDocumentos, agregarDocumentos},
   methods: {
     verDocumentos: function () {
-      if (this.$route.name != "listar") {
         this.$router.push({ name: "listar" });
-
-      }
     },
     agDocs: function(){
-      if (this.$route.name != "agregar") {
         this.$router.push({ name: "agregar" });
-
-      }
     }
   },  
 }
